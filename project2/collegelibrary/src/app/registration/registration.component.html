@@ -1,0 +1,17 @@
+<form (ngSubmit)="onsubmit()"[formGroup]="loginform">
+    <input type="text" name="name" [(ngModel)]="student.name" loginformControlName="name">
+    <small *ngIf="loginform.get('name')?.hasError('required')&&loginform.get('name')?.touched">Enter valid name</small>
+    <small *ngIf="loginform.get('name')?.hasError('maxlength')&&loginform.get('name')?.touched"></small>
+    <small *ngIf="loginform.get('name')?.hasError('minlength')&&loginform.get('name')?.touched"></small>
+    <input type="email" name="email" [(ngModel)]="student.email"loginformformControlName="email">
+    <small *ngIf="loginform.get('email')?.hasError('required')&&loginform.get('email')?.touched">Enter valid email</small>
+    <input type="tel" name="PhoneNo"[(ngModel)]="student.PhoneNo" loginformControlName="PhoneNo">
+    <small *ngIf="loginform.get('PhoneNo')?.hasError('maxlength')&&loginform.get('name')?.touched"></small>
+    <small *ngIf="loginform.get('PhoneNo')?.hasError('minlength')&&loginform.get('name')?.touched"></small>
+    <small *ngIf="loginform.get('PhoneNo')?.hasError('required')&&loginform.get('PhoneNo')?.touched">Enter valid number</small>
+    <input type="password" name="password"[(ngModel)]="student.password" loginformControlName="password">
+    <small *ngIf="loginform.get('password')?.hasError('required')&&loginform.get('password')?.touched">Enter valid password</small>
+    <small *ngIf="loginform.get('password')?.hasError('maxlength')&&loginform.get('password')?.touched"></small>
+    <small *ngIf="loginform.get('password')?.hasError('minlength')&&loginform.get('password')?.touched"></small>
+    <button type="submit"> submit</button>
+</form>
