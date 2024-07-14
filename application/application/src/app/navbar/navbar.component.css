@@ -4,8 +4,6 @@
     box-sizing: border-box;
 }
 body{
-    display: flex;
-    margin: 10%;
     font-family: Arial, Helvetica, sans-serif;
 }
 .userform{
@@ -13,4 +11,59 @@ body{
 }
 h1{
     padding-bottom:2cm;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color:#4CAF50 ;
+}
+.container {
+    width: 50%;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+.form-control:focus {
+    border-color: #aaa;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #3e8e41;
+}
+#name{
+    padding-left: 0.4cm;
+    margin-left: 1.5cm;  
+
+}
+#email{
+    padding-left: 0.3cm;
+    margin-left: 1.6cm;
+}
+#password{
+    padding-left: 0.2cm;
+    margin-left: 0.8cm;
+}
+.sarvani{
+    background-color: #3e8e41;
 }
